@@ -1,0 +1,23 @@
+<hello name="{{ name }}"></hello>
+<p>
+  Start editing to see some magic happen :)
+</p>
+<my-app2>
+  <button (click)="time = 0">
+    <hello [name]="time"></hello>
+  </button>
+  <hello [name]="time"></hello>
+
+  {{time}}
+  <div *newApp="let item">
+    {{item}} -- 22
+  </div>
+  <div #new>
+    <div (click)="time = 0">
+      item -- {{time}}
+    </div>
+  </div>
+  <ng-template #new1 let-item="item">
+    {{item}} {{time}}
+  </ng-template>
+</my-app2>

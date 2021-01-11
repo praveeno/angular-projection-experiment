@@ -1,0 +1,13 @@
+<div>
+  <button>+</button>
+  ----------------------------ng-content<br />
+  <ng-content></ng-content>
+  ----------------------------temp<br />
+  <ng-container *ngTemplateOutlet="tem; context:{$implicit: 1}"></ng-container>
+  ----------------------------temp1<br />
+  <ng-container *ngTemplateOutlet="tem1"></ng-container>
+  -----------------------------temp2<br />
+  <ng-container *ngTemplateOutlet="tem2; context:{item: i}"></ng-container>
+  -----------------------------temp3<br />
+  <ng-container *ngTemplateOutlet="tem3"></ng-container>
+</div>
